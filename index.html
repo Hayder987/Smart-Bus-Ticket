@@ -18,7 +18,11 @@
           theme: {
             extend: {
               colors: {
-                clifford: '#da373d',
+                borderColor : "rgb(29, 209, 0)",
+                buttonBg : "rgba(29, 209, 0, 0.1)",
+                card1Bg : "rgb(255, 191, 15)",
+                card2Bg : "rgb(247, 140, 156)",
+                footerBg : "rgb(3, 7, 18)"
               }
             }
           }
@@ -32,9 +36,51 @@
     </style>
 
 </head>
-<body>
+<body class="fontRailway">
+    <!----------- header-section -------------------------->
+<header class="px-8 py-6 md:px-20">
+    <!-- nav-section -->
+  <nav class="flex justify-between items-center mb-10">
+    <div class="">
+        <h1 class="text-4xl font-extrabold">E-Ticket</h1>
+    </div>
+    <div id="" class="hidden md:flex">
+        <ul class="" id="navLink"></ul>
+    </div>
+    <div class="">
+        <button class="flex justify-center items-center gap-2 border-2 border-borderColor py-2 px-6 rounded-xl bg-buttonBg">
+            <span class="text-borderColor text-xl font-semibold">Bus</span>
+            <span><img src="./images/bus-icon.png" alt=""></span>
+        </button>
+    </div>
+    <div class="flex md:hidden">
+        <i class="fa-solid fa-bars fa-2x"></i>
+    </div>
+  </nav>
+  <!-- banner-section -->
+   <div class="">
+    <div class="p-8 md:py-44 flex flex-col justify-center items-center bg-[url('./images/banner.png')] bg-no-repeat bg-cover bg-center rounded-3xl">
+        <h1 class="text-3xl text-center mb-6 font-extrabold md:text-6xl flex flex-col "><span class="text-white">End-to-End Travel with</span><br> <span class="text-borderColor text-4xl md:text-6xl">P Paribahan</span></h1>
+        <p class="text-base text-gray-300 text-center mb-8">Yes, you can run unit tests and view the results directly within the app. <br> The integrated testing features allow for a streamlined .</p>
+        <button id="" class="text-xl font-bold bg-borderColor py-3 px-6 rounded-xl">Buy Tickets</button>
+    </div>
+    <!-- card-div -->
+     <div class="">
 
-<h1>hello</h1>
+     </div>
+
+   </div>
+</header>
+ <!----------- main-section -------------------------->
+<main class="px-8 py-6 md:px-20">
+
+</main>
+ <!----------- footer-section -------------------------->
+ <footer class="px-8 py-6 md:px-20">
+
+ </footer>
     
+
+ <script src="./js/common.js"></script>
 </body>
 </html>
